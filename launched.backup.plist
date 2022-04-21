@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>Label</key>
+	<string>launched.backup</string>
+	<key>ProgramArguments</key>
+	<array>
+		<string>bash</string>
+		<string>-c</string>
+		<string>pipenv run python backup.py</string>
+	</array>
+	<key>StandardErrorPath</key>
+	<string>{LOG PATH}/error.log</string>
+	<key>StandardOutPath</key>
+	<string>{LOG PATH}/out.log</string>
+	<key>StartCalendarInterval</key>
+	<dict>
+		<key>Hour</key>
+		<integer>00</integer>
+		<key>Minute</key>
+		<integer>00</integer>
+	</dict>
+	<key>UserName</key>
+	<string>{USERNAME}</string>
+	<key>WorkingDirectory</key>
+	<string>{PROJECT DIRECTORY}</string>
+</dict>
+</plist>
